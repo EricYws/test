@@ -21,7 +21,7 @@ class UserAsk(models.Model):
         verbose_name_plural=verbose_name
 
 
-class Comments(models.Model):
+class CourseComments(models.Model):
     user=models.ForeignKey(UserProfile,verbose_name=u"用户")
     couse=models.ForeignKey(Course,verbose_name=u"课程")
     comment=models.CharField(max_length=200,verbose_name=u"评论")
